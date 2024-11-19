@@ -5,7 +5,7 @@ import javax.swing.*;
 
 /**
  *
- * @author ISHAN
+ * @author ENE
  */
 public class Home extends JFrame {
 
@@ -32,13 +32,13 @@ public class Home extends JFrame {
         jButton5 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        
+    
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Wellcome");
+        setTitle("Welcome");
         setBackground(new java.awt.Color(0, 0, 0));
         setBounds(new java.awt.Rectangle(0, 0, 1400, 800));
         setForeground(new java.awt.Color(0, 0, 0));
-
+    
         jTextField2.setBackground(new java.awt.Color(0, 0, 0));
         jTextField2.setFont(new java.awt.Font("Tahoma", 0, 30)); // NOI18N
         jTextField2.setForeground(new java.awt.Color(255, 255, 255));
@@ -47,14 +47,14 @@ public class Home extends JFrame {
                 jTextField2ActionPerformed(evt);
             }
         });
-
+    
         jLabel1.setBackground(new java.awt.Color(0, 0, 0));
         jLabel1.setFont(new java.awt.Font("Ink Free", 1, 48)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 51, 51));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Welcome to the Snake Game");
         jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-
+    
         jButton5.setBackground(new java.awt.Color(255, 0, 0));
         jButton5.setFont(new java.awt.Font("Ink Free", 0, 24)); // NOI18N
         jButton5.setForeground(new java.awt.Color(255, 255, 255));
@@ -64,12 +64,12 @@ public class Home extends JFrame {
                 jButton5ActionPerformed(evt);
             }
         });
-
+    
         jLabel2.setFont(new java.awt.Font("Ink Free", 3, 30)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Name");
         jLabel2.setToolTipText("");
-
+    
         jButton1.setBackground(new java.awt.Color(51, 255, 51));
         jButton1.setFont(new java.awt.Font("Ink Free", 0, 24)); // NOI18N
         jButton1.setForeground(new java.awt.Color(0, 0, 153));
@@ -79,21 +79,22 @@ public class Home extends JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-
+    
+        // Using GroupLayout to center the button
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
             .addGroup(layout.createSequentialGroup()
-                .addGap(428, 428, 428)
+                .addGap(0, 428, 428)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 343, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))) // No extra horizontal gap
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(231, Short.MAX_VALUE)
@@ -120,10 +121,11 @@ public class Home extends JFrame {
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(329, Short.MAX_VALUE))
         );
-
+    
         pack();
-        setLocationRelativeTo(null);
-    }// </editor-fold>//GEN-END:initComponents
+        setLocationRelativeTo(null); // Centers the window on the screen
+    }
+    
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
